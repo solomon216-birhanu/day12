@@ -3,83 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Habesha Eatery offers authentic Ethiopian food in Addis Ababa. Book a table, explore the menu, and visit us today."
-    />
-    <title>Habesha Eatery | Ethiopian Food & Reservations</title>
+    <title>Habesha Eatery</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="#main-content">Skip to main content</a>
+    <header class="header">
+      <h1>Habesha Eatery</h1>
+    </header>
 
-    <h1>Habesha Eatery</h1>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Welcome to our restaurant</h2>
+          <p>
+            Enjoy fresh Ethiopian food with warm hospitality and delicious traditional meals.
+          </p>
+          <button>Book a Table</button>
+        </div>
 
-    <main id="main-content">
-      <h2>Welcome</h2>
-      <img
-        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
-        alt="Traditional Ethiopian platter with injera and colorful stews"
-        loading="lazy"
-        width="1200"
-        height="700"
-      />
+        <img
+          src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
+          alt="Traditional Ethiopian dish"
+          width="600"
+          height="400"
+        />
+      </section>
 
-      <h2>Reserve a Table</h2>
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
+      <section class="form-section">
+        <h3>Reserve a Table</h3>
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="Your name" />
 
-        <label for="tel">Tel</label>
-        <input id="tel" name="tel" type="tel" pattern="09[0-9]{8}" placeholder="0911111111" required />
+          <label>Phone</label>
+          <input type="tel" placeholder="0911111111" />
 
-        <label for="guests">Guests</label>
-        <input id="guests" name="guests" type="number" min="1" max="20" value="2" required />
+          <label>Guests</label>
+          <input type="number" value="2" />
 
-        <label for="date">Date</label>
-        <input id="date" name="date" type="date" required />
+          <label>Date</label>
+          <input type="date" />
 
-        <button type="submit">Book Now</button>
-      </form>
+          <button type="submit">Book Now</button>
+        </form>
+      </section>
 
-      <h2>Menu</h2>
-      <table>
-        <caption>Authentic Habesha dishes served fresh every day</caption>
-        <thead>
-          <tr>
-            <th scope="col">Dish</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price (ETB)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Yetsom Beyaynetu</th>
-            <td>Mixed lentils and vegetables served with injera.</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <th scope="row">Doro Wat</th>
-            <td>Traditional chicken stew with berbere and egg.</td>
-            <td>450</td>
-          </tr>
-          <tr>
-            <th scope="row">Special Kitfo</th>
-            <td>Minced beef with mitmita and ayib.</td>
-            <td>400</td>
-          </tr>
-        </tbody>
-      </table>
+      <section class="menu-section">
+        <h3>Popular Menu</h3>
+        <div class="menu-card">
+          <h4>Yetsom Beyaynetu</h4>
+          <p>Colorful platter with injera, lentils, vegetables, and potatoes.</p>
+          <span>Price: ETB 250</span>
+        </div>
+      </section>
 
-      <h2>Visit Us</h2>
-      <iframe
-        title="Map showing the location of Habesha Eatery in Addis Ababa"
-        src="https://www.google.com/maps?q=Addis%20Ababa%2C%20Ethiopia&z=12&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
+      <section class="visit-section">
+        <h3>Visit Us</h3>
+        <p>Addis Ababa, Ethiopia</p>
+        <iframe
+          src="https://www.google.com/maps?q=Addis%20Ababa%2C%20Ethiopia&z=12&output=embed"
+          title="Map to Habesha Eatery"
+          loading="lazy"
+        ></iframe>
+      </section>
     </main>
 
-    <footer>© 2026 Habesha Eatery</footer>
+    <footer>
+      <p>© 2026 Habesha Eatery</p>
+    </footer>
   </body>
 </html>
